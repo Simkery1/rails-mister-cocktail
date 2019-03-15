@@ -1,0 +1,8 @@
+<h1> Add a new cocktail to the list </h1>
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <div class="form-group">
+    <%= f.input :name, label: 'cocktail name' %>
+  </div>
+    <%= f.submit 'Create', class:'btn btn-primary' %>
+<% end %>
